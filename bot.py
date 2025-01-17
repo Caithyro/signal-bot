@@ -35,9 +35,9 @@ def send_startup_message():
     try:
         command = [signalPath, "-a", account, "send", "-m", "Startup message", startup_receiver]
         subprocess.run(command, check=True)
-        print("Повідомлення надіслано успішно!")
+        print("Message was sent successfully!")
     except subprocess.CalledProcessError as e:
-        print(f"Помилка при відправці повідомлення: {e}")
+        print(f"There is an error while sending message: {e}")
 
 # Populating list of groups
 def populate_groups():
