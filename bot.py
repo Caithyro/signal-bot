@@ -95,7 +95,7 @@ def send_sync_request():
             text=True
         )
         print("Sync request sent.")
-        time.sleep(1)
+        time.sleep(10)
         print("Sync request wait ended.")
     except Exception as e:
         print(f"An error occurred while sending sync request: {e}")
